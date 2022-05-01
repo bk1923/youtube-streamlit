@@ -1,5 +1,5 @@
-
 import streamlit as st
+import time
 
 st.title('Streamlit 超入門')
 
@@ -13,7 +13,7 @@ bar = st.progress(0)
 for i in range(100):
     latest_interation.text(f'Interation{i+1}')
     bar.progress(i + 1)
-    time.sleep(0.01)
+    time.sleep(0.1)
 'Done!!'
 
 
